@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form>
+      <label for="username">username</label>
+      <input type="text" id="username" />
+      <br />
+      <label for="password">password</label>
+      <input type="password" name="" id="password" />
+      <br />
+      <label for="email">email</label>
+      <input type="email" />
+            <br />
+      <input type="submit" />
+      <input type="reset">
+    </form>
+
+    <form action="">
+              <label for="username2">username</label>
+      <input type="text" id="username2" />
+      <br />
+      <label >password</label>
+      <input type="password"  />
+      <br />
+      <label >email</label>
+      <input type="email" />
+            <br />
+      <input type="submit" />
+      <input type="reset">
+
+    </form> -->
+
+    <form action="">
+      <!-- <label for="">username *</label>
+        <input type="text" required name="username">
+        <br>
+        <label for="">hobby</label>
+        <input type="text" name="hobby">
+        <br>
+        <label for="">min  <span style="color: red;">*</span></label>
+        <input type="text" minlength="3" maxlength="10" required >
+
+        <br>
+        <label for="">password</label>
+        <input type="password" required minlength="6" name="password" placeholder="password">
+        <br> -->
+      <label for="age">age</label>
+      <input
+        type="number"
+        name="age"
+        placeholder="age"
+        min="12"
+        max="120"
+        step="4"
+        value="12"
+      />
+      <br />
+      <label for="volume">volume</label>
+      <input
+        type="range"
+        name=""
+        id=""
+        min="0"
+        max="100"
+        value="40"
+        step="10"
+      />
+      <input type="text" name="hobby" value="code" />
+      <!-- <label for="">email</label>
+        <input type="email" name="email" placeholder="example@gmail.com">
+        <input type="submit"> -->
+      <input type="date" min="2026-04-04" max="2026-04-29" />
+      <br />
+      <br />
+      <label for="">please add a resume</label>
+
+      <input type="file" accept=".pdf,.docx" />
+
+      <input type="text" readonly value="703672983" />
+      <input type="text" disabled value="703672983" />
+
+      <br />
+      <label for="">terns abd conditions</label>
+      <input type="checkbox" name="" id="" checked />
+      <br />
+      <br />
+      <fieldset>
+        <legend>select your gender</legend>
+        <label for="">male</label>
+        <input type="radio" name="gender" value="male" />
+        <br />
+        <label for="">female</label>
+        <input type="radio" name="gender" value="female" />
+      </fieldset>
+      <br />
+      <!-- <input type="submit" value="click to submit">
+        <input type="reset" value="click to reset the data"> -->
+      <button type="submit">submit</button>
+      <button type="reset">reset</button>
+      <button type="button">button</button>
+      <br />
+      <label for="select-a-fav-lang"
+        >select your favorite programming lanugage</label
+      >
+
+      <select name="favorite-lang" id="select-a-fav-lang" size="3" multiple>
+        <option value="python">python</option>
+        <option value="javascript" selected>js</option>
+        <option value="java">java</option>
+      </select>
+
+      <select name="" id="">
+        <option value="">select a state</option>
+        <optgroup label="india">
+          <option value="">andhra pradesh</option>
+          <option value="">tamil nadu</option>
+        </optgroup>
+
+        <optgroup label="usa">
+          <option value="">new york</option>
+        </optgroup>
+      </select>
+      <br />
+
+      <label for="">comments</label>
+
+      <textarea
+        name=""
+        id=""
+        placeholder="please enter your comments"
+        rows="10"
+        cols="50"
+      ></textarea>
+
+      <br />
+
+      <label for="">select your favorite fruit</label>
+      <input list="fruits" name="fav-fruit" />
+      <datalist id="fruits">
+        <option value="orange">orange</option>
+        <option value="apple">apple</option>
+        <option value="banana">banana</option>
+      </datalist>
+    </form>
+  </body>
+</html>
