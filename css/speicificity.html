@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+    <style>
+
+        /* browser defaults have speicificity of -1 */
+
+        *{
+            margin:0px
+        }
+        /* universal selector specificity of 0 */
+
+        h1{
+            color:blue
+        }
+
+        /* html elements will have speicificity of 1 */
+
+
+        html body .someclass-2 #id-1{
+            color:red
+        }
+
+        /* specifity (1,1,2) */
+        body .someclass-2 #id-1{
+            color:purple;
+            font-weight: 100;
+            font-size: 100px;
+        }
+        /* specificity (1,1,1) */
+        .someclass-2 #id-1 {
+            color:aqua;
+            font-size: 10px;
+
+        }
+        /* (1,1,0) */
+
+        #id-1{
+            color:black
+        }
+        /* (1,0,0) */
+
+        /* speicificu (1,0,1) */
+         div > .someclass {
+            color:pink
+        }
+        /* speicifity 10+1=11 */
+        a{
+            color:black
+        }
+        /* specificiy 1 */
+
+        html body div  > a:hover{
+            color:red
+
+        }
+        /* spei 10+4 =14 */
+
+        .someclass-2 a:hover{
+            color:pink
+        }
+        
+        /* specificity of 20 + 1 =21 */
+        .someclass a{
+            color:black
+        }
+        /* specificity of 10+1=11 */
+
+
+        input[type="text"]{
+            background-color: aqua;
+        }
+        /* specificity 10+1 =11*/
+
+         div div section article p b input{
+            background-color: red;
+        }
+
+        /* specicity =12 */
+
+        
+
+
+    
+
+        .someclass{
+            color:red;
+        }
+        
+        /* specificity in  10s */
+
+        body div h1{
+            color:black
+
+        }
+        /* speicifity  3 */
+
+
+        div h1{
+            color:mediumseagreen;
+        }
+
+        /* speicificity of 1+1=2 */
+ 
+        h1{
+            color:red !important;
+            font-size: 30px;
+            font-style: italic;
+
+            text-decoration: underline;
+            text-decoration-style: dashed;
+            color:black;
+            font-size:60px;
+            color:deeppink ;
+        }  
+        /* specificity of 1 */
+
+
+        /* brower defaults -1
+        universal selector 0
+        html elements (0,0,1)
+        class selector, pseudo classes and attribute selectors (0,1,0)
+        id selector (1,0,0)
+        inline elements will be in (1,0,0,0)
+        !important (1,0,0,0,0)
+
+        
+        */
+
+    </style>
+     <!-- <link rel="stylesheet" href="./speficity.css"> -->
+   
+</head>
+    <div class="someclass-2">
+        <a href="">go to goole</a>
+
+
+    <h1 class="someclass" id="id-1" style="color: black;">This class is about specificity</h1>
+    <h1 class="someclass">akshdfk</h1>
+            
+    </div>
+    <input type="text">
+    
+</body>
+</html>

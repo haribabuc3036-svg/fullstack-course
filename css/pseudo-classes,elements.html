@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* pseudo-classes */
+        a:link{
+            color: red;
+
+        }
+        a:active{
+            background-color: rgb(242, 0, 255);
+        }
+        /* a:hover {
+            color:black;
+            background-color: aqua;
+            border:2px solid blue
+        } */
+         /* a:visited{
+            border: 10px solid black;
+            background-color:aqua;
+         } */
+         a:visited {
+            color:aqua;
+         }
+        p:hover{
+            background-color: red;
+            /* cursor: pointer;; */
+        }
+        button{
+            background-color: red;
+            border-radius: 5px;
+            /* cursor:progress */
+        }
+        button:active{
+            background-color: aqua;
+        }
+        /* button:hover{
+            background-color: green;
+            padding: 5px;
+            border:2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+            cursor:not-allowed;
+            cursor:col-resize;
+            cursor:crosshair;
+            cursor:progress;
+
+        } */
+         input:focus{
+            background-color: black;
+            color:white;
+            outline:10pxs solid red
+         }
+         input:required{
+            background-color: red;
+         }
+         input:disabled {
+            background-color: greenyellow;
+            outline: 2px solid black;
+         }
+         input:checked + label{
+            background-color: green;
+            /* caret-color: chartreuse; */
+
+         }
+         a:first-child{
+            background-color: purple;
+         }
+
+         input:first-child{
+            outline: 20px solid green;
+         }
+         p:first-child{
+            background-color: aquamarine;
+         }
+
+         p:last-child{
+            background-color: red;
+         }
+         /* p:nth-of-type(5){
+            background-color: black;
+
+         } */
+         p:nth-child(odd){
+            border:2px solid black;
+         }
+         p:nth-child(even){
+            border:2px solid blue
+         }
+        
+         /* pseudo elements */
+
+         /* before */
+         h1::before{
+            content: "this is the before tedxt ->";
+            color:red
+         }
+         h1::after{
+            content: "-> after";
+            color:blue
+
+         }
+         p::first-letter{
+            color:red;
+            font-size: 40px;
+         }
+
+         p::first-line{
+            font-style: italic;
+         }
+
+         input::placeholder{
+            color:blue
+         }
+
+         ::selection{
+            color: yellow;
+            background-color: green           
+
+         }
+
+
+
+        
+
+    </style>
+</head>
+<body >
+    <h1>This is actual content</h1>
+    <a href="https://www.google.com">Go to Google</a>
+    <p>i will change my background-color when hovered</p>
+    <button>submit</button>
+    <div>
+
+       <a href="https://www.amazon.com">Go to Google</a>
+       <a href="https://www.flipkart.com">sfds</a>
+       <a href="https://www.myntra.com">myntra</a>
+               
+    </div>
+
+       <div>
+               <input type="text">
+
+       <input type="text" required>
+       <input type="text" name="" id="" required>
+       <input type="text" name="" id="" disabled>
+       <input type="checkbox" id="check" class="check">
+       <label for="check">label</label>
+       <br>
+       <br>
+
+       <input type="text" placeholder="please enter your username" size="100">
+
+       </div>
+
+       <div>
+        <p>first-child Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident consectetur itaque dolores expedita modi eveniet ut omnis quo ex! Illum eos omnis dolore ducimus nulla. Excepturi non provident iste veniam?</p>
+        <p>second-child Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium inventore iste a dolore fugit suscipit sunt eos veritatis possimus placeat est quidem, culpa exercitationem! Perspiciatis dolore obcaecati cumque aperiam consequatur!</p>
+        <p>third-child</p>
+        <p>fourt-child</p>
+        <p>fifth</p>
+       </div>
+
+              <div>
+                <p>first child</p>
+        <p>kjsdfkds</p>
+        <p>lsldfjsdlf</p>
+        <p>lksdlfjsdlkf</p>
+        <p>ksdhfkd</p>
+       </div>
+
+
+
+
+    
+</body>
+</html>
