@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            transition: background-color 0.9s ease-out 0.5s , opacity 0.2s linear;
+            /* transition-timing-function: ; */
+            /* transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition-delay:0s */
+        }
+        h1:hover{
+            background-color:red;
+            border:2px solid black;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        
+        div{
+            width: 200px;
+            height:30px;
+            background-color: aqua;
+            transform: translateX(300px);
+            transform: translateY(200%);
+            transform: translate(200px,100px);
+            /* 200px -> x direction, 100px is y direction */
+            transform: translate(250px,0px);
+            transition: transform 2s cubic-bezier(0.175, 0.885, 0.32, 1.275),box-shadow 2s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+            transform: rotate(360deg);
+            transform: scale(0.95);
+            border: 2px solid black;
+            box-shadow: 4px 4px 4px gray;
+
+
+        }
+
+        /* h3:hover + div{
+            transform: rotate(0deg);
+            transform: scale(1);
+        } */
+        div:hover{
+            transform: scale(1);
+            cursor: pointer;
+            box-shadow: 8px 8px 10px gray;
+
+        }
+
+        button{
+            background-color: aqua;
+            margin-top: 20px;
+            transform: scale(1);
+            width: 200px;
+            height: 30px;
+            box-shadow: 8px 8px 8px gray;
+            transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+
+
+        }
+
+        button:hover{
+            box-shadow: 4px 4px 4px gray;
+            transform: scale(0.98);
+            cursor: pointer;
+        }
+
+        span{
+            display: block;
+            width: 50px;
+            height:50px;
+            border:2px solid black;
+            background-color: magenta;
+            /* animation-name: mover;
+            animation-duration: 0.9s;
+            animation-iteration-count: infinite; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+            animation-delay:2s; */
+            animation: move 0.9s infinite alternate-reverse linear 2s;
+
+
+        }
+        /* @keyframes mover {
+            from {
+                transform: translateX(0px);
+                background-color: magenta;
+                transform: translateX(0px);
+                transform: rotate(0deg);
+            }
+            to{
+                transform: translateX(300px);
+                background-color:aqua ;
+                transform: translateX(100px);
+                transform: rotate(360deg);
+            }
+
+            
+        } */
+
+        @keyframes mover {
+            0% {
+                transform: translateX(0px);
+                background-color: black;
+                border-radius: 50%;
+
+            }
+
+            25%{
+                transform: translate(200px);
+                background-color: aqua;
+                /* border: 10px solid red; */
+            }
+
+            75%{
+                transform: translateX(300px);
+                background-color: blue;
+                opacity: 0.2;
+            }
+
+            100%{
+                background-color: coral;
+                /* transform: translate(400px); */
+                transform: scale(2);
+            }
+            
+        }
+
+        h4{
+            transform: scaleX(0.1);
+            transition: transform 2s linear;
+            width: 200px;
+            background-color: black;
+            height: 30px;
+            transform-origin: left;
+            color:#fff;
+
+        }
+         h4:hover{
+            transform: scaleX(1);
+        }
+
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Transition</h1>
+    <h1>Transform</h1>
+    <h3>this one shows the div element</h3>
+    <div>for explaining transform</div>
+    <button>submit</button>
+
+    <h1>animations</h1>
+    <span></span>
+    <div></div>
+    <h4>origin</h4>
+
+    
+</body>
+</html>
