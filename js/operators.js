@@ -141,3 +141,22 @@ console.log(!false)
 console.log(!isAdult)
 
 console.log(5+3*6/(3*2) -6) //
+
+// string operators
+
+let firstName="Hari ";
+let lastname="Babu"
+
+let fullName=firstName +lastname
+
+console.log(fullName,"Harsha"+" vardhan"+" is a boy")
+
+let greeting ="Hello "
+greeting +="world"
+console.log(greeting)
+
+// unary operator
+
+let value=42;
+
+console.log(typeof value)
