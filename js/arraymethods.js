@@ -18,13 +18,14 @@
 // console.log(nums.at(-2))
 // console.log(nums.at(8))
 
-// // concat 
-// let a=[1,2];
-// let b=[3,4];
-// let c=[8,9]
-// let merged=a.concat(b,[5,6],[6,7],c)
+// concat 
+let a=[1,2];
+let b=[3,4];
+let c=[8,9]
+let merged=a.concat(b,[5,6],[6,7],c)
 
-// console.log(merged)
+console.log(merged)
+console.log(a,b,c)
 
 // copyWithin(target, start, end)->copy part within array
 
@@ -48,18 +49,18 @@
 // fill(value,start, end) -> fill with static value
 // let arr=[0,1,2,3,4]
 
-// arr.fill(2)
+// // arr.fill(2)
 // arr.fill("hi",3)
 // arr.fill("hi",2,5)
 
 
 // console.log(arr)
 
-// let nested=[1,[2,[3,[4,[5,9]]]],[2,3]]
+let nested=[1,[2,[3,[4,[5,9]]]],[2,3]]
 
-// console.log(nested)
-// console.log(nested.flat(Infinity))
 
+console.log(nested.flat(Infinity))
+console.log(nested)
 
 // includes(value,fromIndex)
 let fruits=["mango","apple","banana","orange","cherry","mango"]
@@ -77,18 +78,21 @@ console.log(fruits.lastIndexOf("mango"))
 
 
 // // join()
-// let letters=["a","b","c"]
+let letters=["a","b","c"]
 
-// console.log(letters.join())
-// console.log(letters.join(""))
-// console.log(letters.join("*"))
+console.log(letters.join())
+console.log(letters.join(""))
+console.log(letters.join("*"))
+console.log(letters,"letter")
 
 // // reverse()
 // let str="abcd"
 
-// let rev=["a","b","c","d"]
+let rev=["a","b","c","d"]
 
-// console.log(rev.reverse())
+console.log(rev)
+console.log(rev.reverse())
+console.log(rev)
 
 // console.log(str.split("").reverse().join(""))
 
@@ -98,7 +102,7 @@ let numbers=[0,1,2,3,4]
 let x=numbers.slice(3)
 
 console.log(x)
-console.log(numbers)
+console.log(numbers,[0,1,2,3,4])
 // console.log(numbers.slice(1,3))
 // console.log(numbers.slice(2,3))
 // console.log(numbers.slice(-1))
@@ -106,8 +110,10 @@ console.log(numbers)
 
 // splice (start,deleteCount,...items)
 
-// let numbers=[0,1,2,3,4]
-// numbers.splice(2)
+let numbers5=[0,1,2,3,4]
+let y=numbers5.splice(2)
+console.log(y)
+
 // numbers.splice(1,2)
 // numbers.splice(1,2,"hi")
 // numbers.splice(3,0,5,6,"sljdfl")
@@ -116,7 +122,15 @@ console.log(numbers)
 
 
 
-// console.log(numbers)
+console.log(numbers5)
+
+
+let numbers6=[1,2,3,4,5]
+console.log(numbers6.pop())
+console.log(numbers6.shift())
+console.log(numbers6.unshift("hi"))
+console.log(numbers6.push("bye"))
+console.log(numbers6)
 
 
 

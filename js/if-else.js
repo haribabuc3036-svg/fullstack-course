@@ -5,7 +5,7 @@ console.log("if else");
 
 
 // basic if statement
-
+d
 let age=17
 
 if(age>=18){
